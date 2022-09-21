@@ -27,7 +27,7 @@ function App() {
         </div>
 
         <div className="music">
-          <p>Name: {2222+ number}</p>
+          <p>Number: {2222+ number}</p>
           <p style={singerStyle}>Name: {singer.name} {singer.job}</p>
         </div>
 
@@ -42,9 +42,23 @@ function App() {
         >
           Learn React
         </a>
+        <Friend></Friend>
       </header>
+      
     </div>
   );
+
+
+  function Friend(){
+    return (
+      <div>
+        <h3>Name: Hasib</h3>
+        <p>dasfdghf</p>
+      </div>
+    )
+    
+    
+  }
 }
 
 export default App;
