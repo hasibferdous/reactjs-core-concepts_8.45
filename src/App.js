@@ -1,11 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+const number = 55555;
+const singer = {name: 'asif', job: 'singer'}
+
+const singerStyle = {
+  color: 'green',
+  backgroundColor : 'white'
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>JSX</h1>
+        <div id="countries" className="countries">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+
+        <div className="container">
+          <h3>Hello ! </h3>
+        </div>
+
+        <div className="music">
+          <p>Name: {2222+ number}</p>
+          <p style={singerStyle}>Name: {singer.name} {singer.job}</p>
+        </div>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
