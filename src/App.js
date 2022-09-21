@@ -11,8 +11,18 @@ const singerStyle = {
 }
 
 function App() {
+  const nayoks = ['Rubel', 'sakib', 'salman'];
+
   return (
     <div className="App">
+
+      {
+        nayoks.map(nayok => <li>Name:{nayok}</li>)
+      }
+      {
+        nayoks.map(nayok => <Person name={nayok}></Person>)
+      }
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>JSX</h1>
@@ -56,9 +66,17 @@ function App() {
         <p>dasfdghf</p>
       </div>
     )
-    
-    
   }
+    function Person(props){
+      return (
+        <div className='person'>
+          <h3>{props.name}</h3>
+          <p>{props.nayika}</p>
+        </div>
+      )
+      
+      }
+  
 }
 
 export default App;
